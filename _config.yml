@@ -1,0 +1,11 @@
+permalink: pretty
+highlighter: rouge
+url: https://cds-snc.github.io/technical-playbook-manuel-technique/
+
+collections:
+  - plays
+
+markdown: kramdown
+
+sass:
+    sass_dir: assets/_sass

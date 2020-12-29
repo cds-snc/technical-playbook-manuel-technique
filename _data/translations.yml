@@ -1,0 +1,16 @@
+en:
+  site_name: "CDS Technical Playbook"
+  menu_alt_text: "Back to top"
+  intro_plays_button: "See the plays"
+  intro_github_button: "Help improve this content"
+  index_heading: "Technical Plays"
+  index_button: "In detail"
+  cds-snc: "Canadian Digital Service"
+fr:
+  site_name: "SNC Manuel Technique"
+  menu_alt_text: "Retour au début"
+  intro_plays_button: "Voir les plans"
+  intro_github_button: "Aidez à améliorer ce contenu"
+  index_heading: "Plans techniques"
+  index_button: "En détail"
+  cds-snc: "Service Numérique Canadien"

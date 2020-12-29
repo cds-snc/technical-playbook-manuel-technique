@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+  <head>
+    <title>{{ site.data.translations[page.lang].site_name }}</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link
+      href="//fonts.googleapis.com/css?family=Merriweather:400,300,700|Source+Sans+Pro:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="/lib-cds/gcweb-dist/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+
+    <link
+      rel="shortcut icon"
+      href="{{site.baseurl}}/assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{site.baseurl}}/assets/images/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{site.baseurl}}/assets/images/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link href="{{site.baseurl}}/assets/css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="navigation_bar">
+      <div class="outer_container">
+        <div class="inner_container">
+          <a href="#introduction"
+            ><h3>{{ site.data.translations[page.lang].site_name }}</h3></a
+          >
+          <ul class="nav">
+            {% for play in site.plays %} {% if play.path contains page.lang %}
+            <li>
+              <a
+                href="#play{{ play._id }}"
+                title="View Play {{ play._id }}: {{ play.title }}"
+                >{{ play._id }}</a
+              >
+            </li>
+            {% endif %} {% endfor %}
+            <li>
+              {% if page.lang == 'fr' %}
+              <a href="{{site.baseurl}}/">EN</a>
+              {% else %}
+              <!--<a href="{{site.baseurl}}/fr">FR</a>-->
+              FR
+              {% endif %}
+            </li>
+          </ul>
+          <div id="menu_icon">
+            <a
+              href="#plays_index_anchor"
+              title="{{ site.data.translations[page.lang].menu_alt_text }}"
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="introduction">
+      <div class="outer_container">
+        <div class="inner_container">
+          <div>
+            {% if page.lang == 'fr' %}
+            <a href="{{site.baseurl}}/">English</a>
+            {% else %}
+            <!--<a href="{{site.baseurl}}/fr">Français</a>-->
+            Français (bientôt)
+            {% endif %}
+          </div>
+
+          <a id="cds_logo" href="https://digital.canada.ca" target="_blank" title="Link to the Canadian Digital Service"><img src='{{site.baseurl}}/assets/images/cds-snc.png' alt="Logo of the Canadian Digital Service"></a>
+          {{ content }}
+
+          <div class="button">
+            <a
+              href="#plays_index_anchor"
+              title="{{ site.data.translations[page.lang].intro_plays_button }}"
+              >{{ site.data.translations[page.lang].intro_plays_button }}</a
+            >
+          </div>
+          <div class="button">
+            <a
+              href="https://cds-snc.github.io/technical-playbook-manuel-technique/"
+              title="{{ site.data.translations[page.lang].intro_plays_button }}"
+              >{{ site.data.translations[page.lang].intro_github_button }}</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="plays_index">
+      <div class="outer_container">
+        <div class="inner_container">
+          <a class="anchor_offset" id="plays_index_anchor"></a>
+          <h2>{{ site.data.translations[page.lang].index_heading }}</h2>
+
+          <div class="columns">
+            <ol>
+              {% for play in site.plays %} {% if play.path contains page.lang %}
+              <li>
+                <a href="#play{{ play._id }}" title="View Play {{ play._id }}"
+                  >{{ play.title }}</a
+                >
+              </li>
+              {% endif %} {% endfor %}
+            </ol>
+          </div>
+
+          <div class="button">
+            <a href="#play1"
+              >{{ site.data.translations[page.lang].index_button }}</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="plays" class="outer_container">
+      {% for play in site.plays %} {% if play.path contains page.lang %}
+      <div class="inner_container">
+        <a class="anchor_offset" id="play{{ play._id }}"></a>
+        <h6>PLAY {{ play._id }}</h6>
+        <h2 class="display">{{ play.title }}</h2>
+        {{ play.output }}
+      </div>
+      {% endif %} {% endfor %}
+    </div>
+
+    <script src="{{site.baseurl}}/assets/js/jquery-1.11.1.min.js"></script>
+    <script src="{{site.baseurl}}/assets/js/scrollspy.js"></script>
+    <script src="{{site.baseurl}}/assets/js/site.js"></script>
+  </body>
+</html>
