@@ -496,13 +496,13 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
     }
 
     a {
-      color: #0071bc;
+      color: #000000;
       text-decoration: underline;
       display: inline-block;
     }
 
     a:visited {
-      color: #4c2c92;
+      color: #373738;
     }
 
     @include media($mobile) {
