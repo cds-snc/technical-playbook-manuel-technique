@@ -1,6 +1,6 @@
 ## Technical Details
 
-The Playbook is compiled from [Markdown](https://help.github.com/articles/github-flavored-markdown "Link to More Information About Markdown") files using [Jekyll](https://github.com/jekyll/jekyll "Link to More Information about Jekyll"). To propose a specific change, you can submit a [pull request](https://help.github.com/articles/creating-a-pull-request "More Information on Submitting Pull Requests") with your change to one of these source Markdown files. The Plays from the Playbook are [available in the `_plays` folder](#).
+The Playbook is compiled from [Markdown](https://help.github.com/articles/github-flavored-markdown "Link to More Information About Markdown") files using [Jekyll](https://github.com/jekyll/jekyll "Link to More Information about Jekyll"). To propose a specific change, you can submit a [pull request](https://help.github.com/articles/creating-a-pull-request "More Information on Submitting Pull Requests") with your change to one of these source Markdown files. The Plays from the Playbook are [available in the `_plays` folder](https://github.com/cds-snc/technical-playbook-manuel-technique/tree/main/_plays).
 
 You can also use Github's in-browser editing feature to make an edit to one of these Markdown files and submit your change for consideration without needing to install any additional software.
 
@@ -17,3 +17,11 @@ To run the site locally, run `jekyll serve --watch`, then visit `http://localhos
 ### Editing the Stylesheets
 
 This project uses [Sass](http://sass-lang.com/ "Link to Learn More About Sass") for managing its style sheets. These styles are defined in the [`styles.scss` file](assets/_sass/styles.scss). We use [Jekyll's native SASS support](https://jekyllrb.com/docs/assets/) to auto-generate the required CSS when you run the site locally, as described above.
+
+---
+
+## Détails Techniques
+
+Le manuel est compilé à partir des fichiers [Markdown](https://help.github.com/articles/github-flavored-markdown "Link to More Information About Markdown") en utilisant [Jekyll](https://github.com/jekyll/jekyll "Link to More Information about Jekyll"). Pour proposer un changement, vous devez soumettre un Pull Request (https://help.github.com/articles/creating-a-pull-request "More Information on Submitting Pull Requests") avec votre changement dans l'un de ces fichiers Markdown source. Les plans techniques sont [disponibles dans le dossier `_plays`](https://github.com/cds-snc/technical-playbook-manuel-technique/tree/main/_plays).
+
+Vous pouvez également utiliser la fonction d'édition dans le navigateur de Github pour modifier l'un de ces fichiers et soumettre vos changements.
