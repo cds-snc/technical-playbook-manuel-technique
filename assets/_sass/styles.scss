@@ -102,7 +102,13 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
     color: $pacific_blue;
     margin-bottom: 0;
   }
-
+  #play_header_title { 
+    font-family: "HKGrotesk", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+  }
   h6 {
     font-family: $sans-serif;
     font-size: 14px;
@@ -294,6 +300,7 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
       display: inline;
       margin-left: 5px;
       list-style-type: none;
+      color: $white;
 
       a {
         display: inline-block;
