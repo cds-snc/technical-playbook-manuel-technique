@@ -138,7 +138,7 @@
       {% for play in site.plays %} {% if play.path contains page.lang %}
       <div class="inner_container">
         <a class="anchor_offset" id="play{{ play._id }}"></a>
-        <h6>PLAY {{ play._id }}</h6>
+        <div class="play_header_title" >PLAY {{ play._id }}</div>
         <h2 class="display">{{ play.title }}</h2>
         {{ play.output }}
       </div>
