@@ -59,8 +59,7 @@
               {% if page.lang == 'fr' %}
               <a href="{{site.baseurl}}/">EN</a>
               {% else %}
-              <!--<a href="{{site.baseurl}}/fr">FR</a>-->
-              FR
+              <a href="{{site.baseurl}}/fr">FR</a>
               {% endif %}
             </li>
           </ul>
@@ -82,8 +81,7 @@
               {% if page.lang == 'fr' %}
               <a href="{{site.baseurl}}/">English</a>
               {% else %}
-              <!--<a href="{{site.baseurl}}/fr">Français</a>-->
-              Français (bientôt)
+              <a href="{{site.baseurl}}/fr">Français</a>
               {% endif %}
             </div>
 
@@ -139,7 +137,7 @@
         {% for play in site.plays %} {% if play.path contains page.lang %}
         <div class="inner_container">
           <a class="anchor_offset" id="play{{ play._id }}"></a>
-          <div class="play_header_title" >PLAY {{ play._id }}</div>
+          <div class="play_header_title" >{{ site.data.translations[page.lang].play_label }} {{ play._id }}</div>
           <h2 class="display">{{ play.title }}</h2>
           {{ play.output }}
         </div>

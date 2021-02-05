@@ -50,7 +50,7 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
 
   ol, ul {
     list-style-type: decimal;
-    list-style-position: inside;
+    list-style-position: outside;
     li {
       margin: 1em 0;
       color: $gray-dark;

@@ -22,6 +22,6 @@ This project uses [Sass](http://sass-lang.com/ "Link to Learn More About Sass") 
 
 ## Détails Techniques
 
-Le manuel est compilé à partir des fichiers [Markdown](https://help.github.com/articles/github-flavored-markdown "Link to More Information About Markdown") en utilisant [Jekyll](https://github.com/jekyll/jekyll "Link to More Information about Jekyll"). Pour proposer un changement, vous devez soumettre un Pull Request (https://help.github.com/articles/creating-a-pull-request "More Information on Submitting Pull Requests") avec votre changement dans l'un de ces fichiers Markdown source. Les plans techniques sont [disponibles dans le dossier `_plays`](https://github.com/cds-snc/technical-playbook-manuel-technique/tree/main/_plays).
+Le manuel est compilé à partir des fichiers [Markdown](https://help.github.com/articles/github-flavored-markdown "Link to More Information About Markdown") en utilisant [Jekyll](https://github.com/jekyll/jekyll "Link to More Information about Jekyll"). Pour proposer un changement, vous devez soumettre un Pull Request (https://help.github.com/articles/creating-a-pull-request "More Information on Submitting Pull Requests") avec votre changement dans l'un de ces fichiers Markdown source. Les stratégies techniques sont [disponibles dans le dossier `_plays`](https://github.com/cds-snc/technical-playbook-manuel-technique/tree/main/_plays).
 
 Vous pouvez également utiliser la fonction d'édition dans le navigateur de Github pour modifier l'un de ces fichiers et soumettre vos changements.
