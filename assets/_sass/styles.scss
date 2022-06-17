@@ -24,7 +24,7 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
 
 @media screen {
   body {
-    background: $cds-yellow;
+    background: $white;
     font-family: $sans-serif;
     margin: 0;
     line-height: 1.5em;
@@ -96,7 +96,7 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
 
   h4 {
     font-family: $sans-serif;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 1.5em;
     color: $pacific_blue;
@@ -120,7 +120,7 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
   p {
     color: $gray-dark;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 2.0em;
   }
 
@@ -149,7 +149,7 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
   }
 
   .button {
-    font-size: 17px;
+    font-size: 18px;
     font-family: $sans-serif;
     font-weight: 700;
     line-height: 1.5em;
@@ -266,6 +266,7 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
     height: 0;
     background: $cds-black;
     color: $white;
+    border-bottom: 4px solid $cds-yellow;
     .outer_container {
       padding: 0 40px;
     }
@@ -495,7 +496,8 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
 
     li {
       padding-left: 5px;
-      font-size: 17px;
+      font-size: 18px;
+      line-height: 28px;
     }
 
     ul {
@@ -503,7 +505,7 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
     }
 
     a {
-      color: #000000;
+      color: $pacific_blue;
       text-decoration: underline;
       display: inline-block;
     }

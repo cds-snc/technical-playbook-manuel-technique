@@ -1,0 +1,18 @@
+{
+  "name": "technical-playbook-manuel-technique",
+  "image": "mcr.microsoft.com/vscode/devcontainers/base:buster",
+
+  "features": {
+    "ruby": "2.7.6"
+  },
+
+  "containerEnv": {
+    "SHELL": "/bin/zsh"
+  },
+
+  "extensions": [
+    "github.copilot"
+  ],
+
+  "remoteUser": "vscode"
+}
