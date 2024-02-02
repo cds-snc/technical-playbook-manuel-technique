@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: technical-playbook-manuel-technique
+  description: CDS Technical Playbook - Manuel Technique SNC
+spec:
+  type: website
+  lifecycle: experimental
+  owner: cds-snc
